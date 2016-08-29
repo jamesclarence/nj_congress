@@ -43,44 +43,6 @@
           'Imagery © <a href="http://mapbox.com">Mapbox</a>',
           id: 'mapbox.streets'
         }).addTo(mymap);
-
-      //L.marker([39.9259, -75.1196]).addTo(mymap);
-      // .bindPopup("<b>District 1</b>").openPopup();
-
-    //   L.circle([39.8, -75.1], 500, {
-    //   color: 'red',
-    //   fillColor: '#f03',
-    //   fillOpacity: 0.5
-    // }).addTo(mymap).bindPopup("I am a circle.");
-
-    var greenIcon = L.icon({
-    iconUrl: 'img/number_1.png',
-    //shadowUrl: 'leaf-shadow.png',
-
-     iconSize:     [32, 37], // size of the icon
-    // shadowSize:   [50, 64], // size of the shadow
-    iconAnchor:   [16, 37], // point of the icon which will correspond to marker's location
-   // shadowAnchor: [4, 62],  // the same for the shadow
-    //popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
-});
-
-    L.marker([39.9259, -75.1196],  {icon: greenIcon}).addTo(mymap);
-
-    var geojsonFeature = {
-      "type": "Feature",
-      "properties": {
-        "popupContent": "District 1"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.97344970703124,
-          39.897621163416744
-        ]
-      }
-    };
-
-L.geoJson(geojsonFeature).addTo(mymap);
     </script>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

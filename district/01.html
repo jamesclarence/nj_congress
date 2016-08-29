@@ -12,9 +12,9 @@
     <title>New Jersey - District 01</title>
 
     <!-- Bootstrap -->
-    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap theme -->
-    <link href="../../css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="../css/bootstrap-theme.min.css" rel="stylesheet">
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
@@ -23,6 +23,9 @@
 
      <!-- Custom Fonts -->
     <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- LeafletJS CSS -->
+    <link rel="stylesheet" href="https://npmcdn.com/leaflet@1.0.0-rc.2/dist/leaflet.css" />
 
     <!-- Custom styles for this template 
     <link href="theme.css" rel="stylesheet"> -->
@@ -48,11 +51,10 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="../../index.html">New Jersey</a>
+          <a class="navbar-brand" href="../index.html">New Jersey</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="../../index.html">Home</a></li>
             <li><a href="#about">About</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">District<span class="caret"></span></a>
@@ -79,24 +81,26 @@
    <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container" align="center">
-        <h1>New Jersey</h1>
         <hr class="star-light">
-        <h1>Congressional District 1</h1>
+        <h1>New Jersey - Congressional District 1</h1>
       </div>
+    <!-- </div> -->
+
+    <div id="mapid" style="width: 600px; height: 400px" class="container"></div>
     </div>
 
     <div class="container">
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-6">
-          <img src="../img/01-dem.jpg" class="img-thumbnail">
+          <img src="img/01-dem.jpg" class="img-thumbnail">
           <h2>Dave Cole</h2>
           <h3>Democrat</h3>
           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
           <h2><a href="https://coleforcongress.com/" target="_blank"><span class="label label-default" role="button">Official Campaign Page</span></a></h2>
         </div>
         <div class="col-md-6">
-          <img src="../img/01-dem.jpg" class="img-thumbnail">
+          <img src="img/01-dem.jpg" class="img-thumbnail">
           <h2>Frank Lobiondo <i>(Incumbent)</i></h2>
           <h3>Republican</h3>
           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
@@ -110,6 +114,23 @@
         <p>&copy; jamesclarence inc.</p>
       </footer>
     </div> <!-- /container -->
+
+    <script src="https://npmcdn.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>
+    <script src="../js/nj_districts.js" type="text/javascript"></script>
+
+    <script>
+        var mymap = L.map('mapid').setView([39.7977, -75.1255], 9);
+
+        L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/light-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiamZpc2hlcnBjY2FtIiwiYSI6ImNpcm10ZjR1cTA4d2JmZ204dDhtZHhqYzkifQ.EiydZ_541C9UnMch1xXDpQ', {
+          maxZoom: 18,
+          attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+          '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+          'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+          id: 'mapbox.streets'
+        }).addTo(mymap);
+
+        L.geoJson(nj_01).addTo(mymap);
+    </script>
 
       <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
