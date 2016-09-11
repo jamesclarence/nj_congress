@@ -33,7 +33,7 @@
       </div>
 
       <div id="nj01">
-      <div id="map01" style="width: 600px; height: 400px" class="container"></div>
+        <div id="map01" style="width: 600px; height: 400px" class="container"></div>
         <div class="container">
           <div class="row">
             <div class="col-md-6">
@@ -54,17 +54,50 @@
         </div>
       </div>
 
-      <div id="nj02"></div>
-      <div id="nj03"></div>
-      <div id="nj04"></div>
-      <div id="nj05"></div>
-      <div id="nj06"></div>
-      <div id="nj07"></div>
-      <div id="nj08"></div>
-      <div id="nj09"></div>
-      <div id="nj10"></div>
-      <div id="nj11"></div>
-      <div id="nj12"></div>
+      <div id="nj02">
+        <div id="map02" style="width: 600px; height: 400px" class="container"></div>
+      </div>
+
+      <div id="nj03">
+        <div id="map03" style="width: 600px; height: 400px" class="container"></div>
+      </div>
+
+      <div id="nj04">
+        <div id="map04" style="width: 600px; height: 400px" class="container"></div>
+      </div>
+
+      <div id="nj05">
+        <div id="map05" style="width: 600px; height: 400px" class="container"></div>
+      </div>
+
+      <div id="nj06">
+        <div id="map06" style="width: 600px; height: 400px" class="container"></div>
+      </div>
+
+      <div id="nj07">
+        <div id="map07" style="width: 600px; height: 400px" class="container"></div>
+      </div>
+
+      <div id="nj08">
+        <div id="map08" style="width: 600px; height: 400px" class="container"></div>
+      </div>
+
+      <div id="nj09">
+        <div id="map09" style="width: 600px; height: 400px" class="container"></div>
+      </div>
+
+      <div id="nj10">
+        <div id="map10" style="width: 600px; height: 400px" class="container"></div>
+      </div>
+
+      <div id="nj11">
+        <div id="map11" style="width: 600px; height: 400px" class="container"></div>
+      </div>
+
+      <div id="nj12">
+        <div id="map12" style="width: 600px; height: 400px" class="container"></div>
+      </div>
+
       <script src="https://npmcdn.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>
       
       <!-- <script src="https://npmcdn.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script> -->
@@ -93,6 +126,150 @@
         }).addTo(map01);
 
         L.geoJson(nj_01).addTo(map01);
+        
+        // District 02
+        var map02 = L.map('map02').setView([39.3643, -74.4229], 8);
+
+        L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/light-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiamZpc2hlcnBjY2FtIiwiYSI6ImNpcm10ZjR1cTA4d2JmZ204dDhtZHhqYzkifQ.EiydZ_541C9UnMch1xXDpQ', {
+          maxZoom: 18,
+          attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+          '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+          'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+          id: 'mapbox.streets'
+        }).addTo(map02);
+
+        L.geoJson(nj_02).addTo(map02);
+
+        // District 03
+        var map03 = L.map('map03').setView([39.9537, -74.1979], 8);
+
+        L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/light-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiamZpc2hlcnBjY2FtIiwiYSI6ImNpcm10ZjR1cTA4d2JmZ204dDhtZHhqYzkifQ.EiydZ_541C9UnMch1xXDpQ', {
+          maxZoom: 18,
+          attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+          '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+          'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+          id: 'mapbox.streets'
+        }).addTo(map03);
+
+        L.geoJson(nj_03).addTo(map03);
+
+        // District 04
+        var map04 = L.map('map04').setView([40.2115, -74.6797], 8);
+
+        L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/light-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiamZpc2hlcnBjY2FtIiwiYSI6ImNpcm10ZjR1cTA4d2JmZ204dDhtZHhqYzkifQ.EiydZ_541C9UnMch1xXDpQ', {
+          maxZoom: 18,
+          attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+          '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+          'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+          id: 'mapbox.streets'
+        }).addTo(map04);
+
+        L.geoJson(nj_04).addTo(map04);
+
+        // District 05
+        var map05 = L.map('map05').setView([41.2568, -74.6166], 8);
+
+        L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/light-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiamZpc2hlcnBjY2FtIiwiYSI6ImNpcm10ZjR1cTA4d2JmZ204dDhtZHhqYzkifQ.EiydZ_541C9UnMch1xXDpQ', {
+          maxZoom: 18,
+          attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+          '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+          'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+          id: 'mapbox.streets'
+        }).addTo(map05);
+
+        L.geoJson(nj_05).addTo(map05);
+
+        // District 06
+        var map06 = L.map('map06').setView([40.3043, -73.9924], 8);
+
+        L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/light-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiamZpc2hlcnBjY2FtIiwiYSI6ImNpcm10ZjR1cTA4d2JmZ204dDhtZHhqYzkifQ.EiydZ_541C9UnMch1xXDpQ', {
+          maxZoom: 18,
+          attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+          '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+          'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+          id: 'mapbox.streets'
+        }).addTo(map06);
+
+        L.geoJson(nj_06).addTo(map06);
+        
+        // District 07
+        var map07 = L.map('map07').setView([40.6307, -74.8685], 8);
+
+        L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/light-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiamZpc2hlcnBjY2FtIiwiYSI6ImNpcm10ZjR1cTA4d2JmZ204dDhtZHhqYzkifQ.EiydZ_541C9UnMch1xXDpQ', {
+          maxZoom: 18,
+          attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+          '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+          'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+          id: 'mapbox.streets'
+        }).addTo(map07);
+
+        L.geoJson(nj_07).addTo(map07);
+
+        // District 08
+        var map08 = L.map('map08').setView([40.7879, -74.0143], 9);
+
+        L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/light-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiamZpc2hlcnBjY2FtIiwiYSI6ImNpcm10ZjR1cTA4d2JmZ204dDhtZHhqYzkifQ.EiydZ_541C9UnMch1xXDpQ', {
+          maxZoom: 18,
+          attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+          '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+          'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+          id: 'mapbox.streets'
+        }).addTo(map08);
+
+        L.geoJson(nj_08).addTo(map08);
+
+        // District 09
+        var map09 = L.map('map01').setView([40.9168, -74.1718], 9);
+
+        L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/light-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiamZpc2hlcnBjY2FtIiwiYSI6ImNpcm10ZjR1cTA4d2JmZ204dDhtZHhqYzkifQ.EiydZ_541C9UnMch1xXDpQ', {
+          maxZoom: 18,
+          attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+          '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+          'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+          id: 'mapbox.streets'
+        }).addTo(map09);
+
+        L.geoJson(nj_09).addTo(map09);
+
+        // District 10
+        var map10 = L.map('map01').setView([40.7357, -74.1724], 9);
+
+        L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/light-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiamZpc2hlcnBjY2FtIiwiYSI6ImNpcm10ZjR1cTA4d2JmZ204dDhtZHhqYzkifQ.EiydZ_541C9UnMch1xXDpQ', {
+          maxZoom: 18,
+          attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+          '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+          'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+          id: 'mapbox.streets'
+        }).addTo(map10);
+
+        L.geoJson(nj_10).addTo(map10);
+        
+        // District 11
+        var map11 = L.map('map01').setView([40.7968, -74.4815], 8);
+
+        L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/light-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiamZpc2hlcnBjY2FtIiwiYSI6ImNpcm10ZjR1cTA4d2JmZ204dDhtZHhqYzkifQ.EiydZ_541C9UnMch1xXDpQ', {
+          maxZoom: 18,
+          attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+          '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+          'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+          id: 'mapbox.streets'
+        }).addTo(map11);
+
+        L.geoJson(nj_11).addTo(map11);
+
+        // District 12
+        var map12 = L.map('map12').setView([40.26, - 74.7909], 8);
+
+        L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/light-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiamZpc2hlcnBjY2FtIiwiYSI6ImNpcm10ZjR1cTA4d2JmZ204dDhtZHhqYzkifQ.EiydZ_541C9UnMch1xXDpQ', {
+          maxZoom: 18,
+          attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+          '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+          'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+          id: 'mapbox.streets'
+        }).addTo(map12);
+
+        L.geoJson(nj_12).addTo(map12);
+
     </script>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
