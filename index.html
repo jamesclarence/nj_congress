@@ -66,7 +66,7 @@
       
       <div class="jumbotron">
         <h1 align="center">New Jersey 2016 Congressional Elections</h1>
-        <div id="mapid" style="width: 600px; height: 700px" class="container"></div>
+        <div id="map" style="width: 600px; height: 700px" class="container"></div>
       </div>
 
       
@@ -151,8 +151,20 @@
           //  Clicking on the district name will remove the geojson layer of the previous district
           //    and replace it with the district you selected
 
-          var nj_01 = L.geoJson(nj_01, {});
           // var districts = new L.LayerGroup();
+          
+          var nj_01 = L.geoJson(nj_01, {});
+          var nj_02 = L.geoJson(nj_02, {});
+          var nj_03 = L.geoJson(nj_03, {});
+          var nj_04 = L.geoJson(nj_04, {});
+          var nj_05 = L.geoJson(nj_05, {});
+          var nj_06 = L.geoJson(nj_06, {});
+          var nj_07 = L.geoJson(nj_07, {});
+          var nj_08 = L.geoJson(nj_08, {});
+          var nj_09 = L.geoJson(nj_09, {});
+          var nj_10 = L.geoJson(nj_10, {});
+          var nj_11 = L.geoJson(nj_11, {});
+          var nj_12 = L.geoJson(nj_12, {});
 
           // var mbAttr = 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
           // '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
@@ -162,7 +174,7 @@
           
           // var nj_tile = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/light-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiamZpc2hlcnBjY2FtIiwiYSI6ImNpcm10ZjR1cTA4d2JmZ204dDhtZHhqYzkifQ.EiydZ_541C9UnMch1xXDpQ';
 
-          var map = L.map('map').setView([40.1, -74.4], 7);
+          var map = L.map('map').setView([40.1, -74.4], 8);
 
           L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/light-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiamZpc2hlcnBjY2FtIiwiYSI6ImNpcm10ZjR1cTA4d2JmZ204dDhtZHhqYzkifQ.EiydZ_541C9UnMch1xXDpQ', {
           maxZoom: 18,
@@ -186,21 +198,32 @@
           };
 
           var overlayMaps = {
-            "Districts": nj_01
+            "District 1": nj_01,
+            "District 2": nj_02,
+            "District 3": nj_03,
+            "District 4": nj_04,
+            "District 5": nj_05,
+            "District 6": nj_06,
+            "District 7": nj_07,
+            "District 8": nj_08,
+            "District 9": nj_09,
+            "District 10": nj_10,
+            "District 11": nj_11,
+            "District 12": nj_12,
           };
 
           L.control.layers(baseMaps, overlayMaps).addTo(map);
 
         // State map with all district boundary layers from Mapbox Studio
-        var mymap = L.map('mapid').setView([40.1, -74.4], 8);
+        // var mymap = L.map('mapid').setView([40.1, -74.4], 8);
 
-        L.tileLayer('https://api.mapbox.com/styles/v1/jfisherpccam/cirl8n1qr000hg9njm0s792mj/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiamZpc2hlcnBjY2FtIiwiYSI6ImNpcm10ZjR1cTA4d2JmZ204dDhtZHhqYzkifQ.EiydZ_541C9UnMch1xXDpQ', {
-          maxZoom: 18,
-          attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
-          '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-          'Imagery © <a href="http://mapbox.com">Mapbox</a>',
-          id: 'mapbox.streets'
-        }).addTo(mymap);
+        // L.tileLayer('https://api.mapbox.com/styles/v1/jfisherpccam/cirl8n1qr000hg9njm0s792mj/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiamZpc2hlcnBjY2FtIiwiYSI6ImNpcm10ZjR1cTA4d2JmZ204dDhtZHhqYzkifQ.EiydZ_541C9UnMch1xXDpQ', {
+        //   maxZoom: 18,
+        //   attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+        //   '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+        //   'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+        //   id: 'mapbox.streets'
+        // }).addTo(mymap);
 
         // District 01
         // var map01 = L.map('map01').setView([39.7977, -75.1255], 9);
