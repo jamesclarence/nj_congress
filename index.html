@@ -30,7 +30,7 @@
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="dropdown" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -41,20 +41,20 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">District<span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Choose Congressional District<span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#nj01">District 01</a></li>
-                <li><a href="#nj02">District 02</a></li>
-                <li><a href="#nj03">District 03</a></li>
-                <li><a href="#nj04">District 04</a></li>
-                <li><a href="#nj05">District 05</a></li>
-                <li><a href="#nj06">District 06</a></li>
-                <li><a href="#nj07">District 07</a></li>
-                <li><a href="#nj08">District 08</a></li>
-                <li><a href="#nj09">District 09</a></li>
-                <li><a href="#nj10">District 10</a></li>
-                <li><a href="#nj11">District 11</a></li>
-                <li><a href="#nj12">District 12</a></li>
+                <li><a href="#nj01"><span class="glyphicon glyphicon-arrow-right"></span> District 01</a></li>
+                <li><a href="#nj02"><span class="glyphicon glyphicon-arrow-right"></span> District 02</a></li>
+                <li><a href="#nj03"><span class="glyphicon glyphicon-arrow-right"></span> District 03</a></li>
+                <li><a href="#nj04"><span class="glyphicon glyphicon-arrow-right"></span> District 04</a></li>
+                <li><a href="#nj05"><span class="glyphicon glyphicon-arrow-right"></span> District 05</a></li>
+                <li><a href="#nj06"><span class="glyphicon glyphicon-arrow-right"></span> District 06</a></li>
+                <li><a href="#nj07"><span class="glyphicon glyphicon-arrow-right"></span> District 07</a></li>
+                <li><a href="#nj08"><span class="glyphicon glyphicon-arrow-right"></span> District 08</a></li>
+                <li><a href="#nj09"><span class="glyphicon glyphicon-arrow-right"></span> District 09</a></li>
+                <li><a href="#nj10"><span class="glyphicon glyphicon-arrow-right"></span> District 10</a></li>
+                <li><a href="#nj11"><span class="glyphicon glyphicon-arrow-right"></span> District 11</a></li>
+                <li><a href="#nj12"><span class="glyphicon glyphicon-arrow-right"></span> District 12</a></li>
               </ul>
             </li>
           </ul>
@@ -63,8 +63,18 @@
     </nav>
       
       <div id="top" class="jumbotron">
-        <h1 align="center">New Jersey 2016 Congressional Elections</h1>
-        <div id="map" style="width: 600px; height: 700px" class="container"></div>
+        <div class="row">
+          <div class="col-md-6">
+            <div id="map" style="width: 600px; height: 700px" class="container"></div>  
+          </div>
+          <div class="col-md-6">
+            <h1 align="center">New Jersey 2016 Congressional Elections</h1>
+            <h2>See the candidates in each 2016 New Jersey Congressional race</h2>
+            <h3>Use the box at the top right of the map to see where each New Jersey Congressional district is. Once you do that, click the district on the map for a link to see the candidates.</h3>
+            <h2>OR</h2>
+            <h3>Select the district from the dropdown box up top to go straight to the candidates for that district <span class="glyphicon glyphicon-arrow-up"></h3>
+          </div>
+        </div>
       </div>
       
       <div id="nj01">
@@ -75,18 +85,20 @@
               <img src="img/01-dem.jpg" class="img-thumbnail">
               <h2>Donald Norcross <i>(Incumbent)</i></h2>
               <h3>Democrat</h3>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
               <h2><a href="http://www.donaldnorcrossforcongress.com/" target="_blank"><span class="label label-default" role="button">Official Campaign Page</span></a></h2>
             </div>
             <div class="col-md-6">
               <img src="img/01-dem.jpg" class="img-thumbnail">
               <h2>Bob Patterson</h2>
               <h3>Republican</h3>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
               <h2><a href="http://www.bobpattersonforcongress.com/" target="_blank"><span class="label label-default" role="button">Official Campaign Page</span></a></h2>
             </div>
           </div>
         </div>
+      </div>
+
+      <div class="row">
+        <hr>
       </div>
 
       <div id="nj02">
@@ -97,18 +109,20 @@
               <img src="img/01-dem.jpg" class="img-thumbnail">
               <h2>Dave Cole</h2>
               <h3>Democrat</h3>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
               <h2><a href="https://coleforcongress.com/" target="_blank"><span class="label label-default" role="button">Official Campaign Page</span></a></h2>
             </div>
             <div class="col-md-6">
               <img src="img/01-dem.jpg" class="img-thumbnail">
               <h2>Frank Lobiondo <i>(Incumbent)</i></h2>
               <h3>Republican</h3>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
               <h2><a href="http://www.lobiondoforcongress.com/" target="_blank"><span class="label label-default" role="button">Official Campaign Page</span></a></h2>
             </div>
           </div>
         </div>
+      </div>
+
+      <div class="row">
+        <hr>
       </div>
 
       <div id="nj03">
@@ -119,18 +133,20 @@
               <img src="img/01-dem.jpg" class="img-thumbnail">
               <h2>Frederick John Lavergne</h2>
               <h3>Democrat</h3>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <h2><a href="https://coleforcongress.com/" target="_blank"><span class="label label-default" role="button">Official Campaign Page</span></a></h2>
+              <h2><a href="https://www.facebook.com/FrederickJohnLaVergneForCongress/" target="_blank"><span class="label label-default" role="button">Official Campaign Page</span></a></h2>
             </div>
             <div class="col-md-6">
               <img src="img/01-dem.jpg" class="img-thumbnail">
               <h2>Tom MacArthur <i>(Incumbent)</i></h2>
               <h3>Republican</h3>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <h2><a href="http://www.lobiondoforcongress.com/" target="_blank"><span class="label label-default" role="button">Official Campaign Page</span></a></h2>
+              <h2><a href="http://www.tmac4congress.com/" target="_blank"><span class="label label-default" role="button">Official Campaign Page</span></a></h2>
             </div>
           </div>
         </div>
+      </div>
+
+      <div class="row">
+        <hr>
       </div>
 
       <div id="nj04">
@@ -141,18 +157,20 @@
               <img src="img/01-dem.jpg" class="img-thumbnail">
               <h2>Lorna Phillipson</h2>
               <h3>Democrat</h3>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <h2><a href="https://coleforcongress.com/" target="_blank"><span class="label label-default" role="button">Official Campaign Page</span></a></h2>
+              <h2><a href="http://www.phillipsonforcongress.com/" target="_blank"><span class="label label-default" role="button">Official Campaign Page</span></a></h2>
             </div>
             <div class="col-md-6">
               <img src="img/01-dem.jpg" class="img-thumbnail">
               <h2>Chris Smith <i>(Incumbent)</i></h2>
               <h3>Republican</h3>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <h2><a href="http://www.lobiondoforcongress.com/" target="_blank"><span class="label label-default" role="button">Official Campaign Page</span></a></h2>
+              <h2><a href="http://smithfornj.org/" target="_blank"><span class="label label-default" role="button">Official Campaign Page</span></a></h2>
             </div>
           </div>
         </div>
+      </div>
+
+      <div class="row">
+        <hr>
       </div>
 
       <div id="nj05">
@@ -163,18 +181,20 @@
               <img src="img/01-dem.jpg" class="img-thumbnail">
               <h2>Josh Gottheimer</h2>
               <h3>Democrat</h3>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <h2><a href="https://coleforcongress.com/" target="_blank"><span class="label label-default" role="button">Official Campaign Page</span></a></h2>
+              <h2><a href="http://josh4congress.com/" target="_blank"><span class="label label-default" role="button">Official Campaign Page</span></a></h2>
             </div>
             <div class="col-md-6">
               <img src="img/01-dem.jpg" class="img-thumbnail">
               <h2>Scott Garrett <i>(Incumbent)</i></h2>
               <h3>Republican</h3>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <h2><a href="http://www.lobiondoforcongress.com/" target="_blank"><span class="label label-default" role="button">Official Campaign Page</span></a></h2>
+              <h2><a href="http://www.garrettforcongress.com/" target="_blank"><span class="label label-default" role="button">Official Campaign Page</span></a></h2>
             </div>
           </div>
         </div>
+      </div>
+
+      <div class="row">
+        <hr>
       </div>
 
       <div id="nj06">
@@ -185,18 +205,20 @@
                 <img src="img/01-dem.jpg" class="img-thumbnail">
                 <h2>Frank Pallone <i>(Incumbent)</i></h2>
                 <h3>Democrat</h3>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                <h2><a href="https://coleforcongress.com/" target="_blank"><span class="label label-default" role="button">Official Campaign Page</span></a></h2>
+                <h2><a href="http://www.pallonefornewjersey.com/" target="_blank"><span class="label label-default" role="button">Official Campaign Page</span></a></h2>
               </div>
               <div class="col-md-6">
                 <img src="img/01-dem.jpg" class="img-thumbnail">
-                <h2>Frank Lobiondo</h2>
+                <h2>Brent Sonnek-Schmelz</h2>
                 <h3>Republican</h3>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                <h2><a href="http://www.lobiondoforcongress.com/" target="_blank"><span class="label label-default" role="button">Official Campaign Page</span></a></h2>
+                <h2><a href="http://www.brent4congress.com/" target="_blank"><span class="label label-default" role="button">Official Campaign Page</span></a></h2>
             </div>
           </div>
         </div>
+      </div>
+
+      <div class="row">
+        <hr>
       </div>
 
       <div id="nj07">
@@ -207,19 +229,21 @@
               <img src="img/01-dem.jpg" class="img-thumbnail">
               <h2>Peter Jacob</h2>
               <h3>Democrat</h3>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <h2><a href="https://coleforcongress.com/" target="_blank"><span class="label label-default" role="button">Official Campaign Page</span></a></h2>
+              <h2><a href="http://www.peterforcongress.com/" target="_blank"><span class="label label-default" role="button">Official Campaign Page</span></a></h2>
             </div>
             <div class="col-md-6">
               <img src="img/01-dem.jpg" class="img-thumbnail">
               <h2>Leonard Lance <i>(Incumbent)</i></h2>
               <h3>Republican</h3>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <h2><a href="http://www.lobiondoforcongress.com/" target="_blank"><span class="label label-default" role="button">Official Campaign Page</span></a></h2>
+              <h2><a href="http://www.lanceforcongress.com/" target="_blank"><span class="label label-default" role="button">Official Campaign Page</span></a></h2>
             </div>
           </div>
         </div>
       </div>
+
+      <div class="row">
+        <hr>
+      </div>      
 
       <div id="nj08">
         <div class="container">
@@ -227,20 +251,22 @@
           <div class="row">
             <div class="col-md-6">
               <img src="img/01-dem.jpg" class="img-thumbnail">
-              <h2>Albio Sires</h2>
+              <h2>Albio Sires <i>(Incumbent)</i></h2>
               <h3>Democrat</h3>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <h2><a href="https://coleforcongress.com/" target="_blank"><span class="label label-default" role="button">Official Campaign Page</span></a></h2>
+              <h2><a href="http://sires.house.gov/" target="_blank"><span class="label label-default" role="button">Official Campaign Page</span></a></h2>
             </div>
             <div class="col-md-6">
               <img src="img/01-dem.jpg" class="img-thumbnail">
-              <h2>Agha Khan <i>(Incumbent)</i></h2>
+              <h2>Agha Khan</h2>
               <h3>Republican</h3>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <h2><a href="http://www.lobiondoforcongress.com/" target="_blank"><span class="label label-default" role="button">Official Campaign Page</span></a></h2>
+              <h2><a href="http://www.khanforcongress.com/" target="_blank"><span class="label label-default" role="button">Official Campaign Page</span></a></h2>
             </div>
           </div>
         </div>
+      </div>
+
+      <div class="row">
+        <hr>
       </div>
 
       <div id="nj09">
@@ -251,18 +277,20 @@
               <img src="img/01-dem.jpg" class="img-thumbnail">
               <h2>Bill Pascrell <i>(Incumbent)</i></h2>
               <h3>Democrat</h3>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <h2><a href="https://coleforcongress.com/" target="_blank"><span class="label label-default" role="button">Official Campaign Page</span></a></h2>
+              <h2><a href="http://billpascrell.com/" target="_blank"><span class="label label-default" role="button">Official Campaign Page</span></a></h2>
             </div>
             <div class="col-md-6">
               <img src="img/01-dem.jpg" class="img-thumbnail">
               <h2>Hector Castillo</h2>
               <h3>Republican</h3>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <h2><a href="http://www.lobiondoforcongress.com/" target="_blank"><span class="label label-default" role="button">Official Campaign Page</span></a></h2>
+              <h2><a href="https://ballotpedia.org/Hector_Castillo" target="_blank"><span class="label label-default" role="button">Official Campaign Page</span></a></h2>
             </div>
           </div>
         </div>
+      </div>
+
+      <div class="row">
+        <hr>
       </div>
 
       <div id="nj10">
@@ -273,18 +301,20 @@
               <img src="img/01-dem.jpg" class="img-thumbnail">
               <h2>Donald Payne Jr. <i>(Incumbent)</i></h2>
               <h3>Democrat</h3>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <h2><a href="https://coleforcongress.com/" target="_blank"><span class="label label-default" role="button">Official Campaign Page</span></a></h2>
+              <h2><a href="http://paynejrforcongress.ngpvanhost.com/" target="_blank"><span class="label label-default" role="button">Official Campaign Page</span></a></h2>
             </div>
             <div class="col-md-6">
               <img src="img/01-dem.jpg" class="img-thumbnail">
               <h2>David Pinckney</h2>
               <h3>Republican</h3>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <h2><a href="http://www.lobiondoforcongress.com/" target="_blank"><span class="label label-default" role="button">Official Campaign Page</span></a></h2>
+              <h2><a href="https://ballotpedia.org/David_Pinckney" target="_blank"><span class="label label-default" role="button">Official Campaign Page</span></a></h2>
            </div>
           </div>
         </div>
+      </div>
+
+      <div class="row">
+        <hr>
       </div>
 
       <div id="nj11">
@@ -295,18 +325,20 @@
               <img src="img/01-dem.jpg" class="img-thumbnail">
               <h2>Joseph Wenzel</h2>
               <h3>Democrat</h3>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <h2><a href="https://coleforcongress.com/" target="_blank"><span class="label label-default" role="button">Official Campaign Page</span></a></h2>
+              <h2><a href="http://www.vote4wenzel.com/" target="_blank"><span class="label label-default" role="button">Official Campaign Page</span></a></h2>
             </div>
             <div class="col-md-6">
               <img src="img/01-dem.jpg" class="img-thumbnail">
               <h2>Rodney Frelinghuysen <i>(Incumbent)</i></h2>
               <h3>Republican</h3>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <h2><a href="http://www.lobiondoforcongress.com/" target="_blank"><span class="label label-default" role="button">Official Campaign Page</span></a></h2>
+              <h2><a href="http://www.rodneyforcongress.com/" target="_blank"><span class="label label-default" role="button">Official Campaign Page</span></a></h2>
             </div>
           </div>
         </div>
+      </div>
+
+      <div class="row">
+        <hr>
       </div>
 
       <div id="nj12">
@@ -317,15 +349,13 @@
               <img src="img/01-dem.jpg" class="img-thumbnail">
               <h2>Bonnie Watson Coleman <i>(Incumbent)</i></h2>
               <h3>Democrat</h3>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <h2><a href="https://coleforcongress.com/" target="_blank"><span class="label label-default" role="button">Official Campaign Page</span></a></h2>
+              <h2><a href="http://www.bonnieforcongress.com/" target="_blank"><span class="label label-default" role="button">Official Campaign Page</span></a></h2>
             </div>
             <div class="col-md-6">
               <img src="img/01-dem.jpg" class="img-thumbnail">
               <h2>Steven Uccio</h2>
               <h3>Republican</h3>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <h2><a href="http://www.lobiondoforcongress.com/" target="_blank"><span class="label label-default" role="button">Official Campaign Page</span></a></h2>
+              <h2><a href="http://stevenuccio.com/" target="_blank"><span class="label label-default" role="button">Official Campaign Page</span></a></h2>
             </div>
           </div>
         </div>
@@ -339,50 +369,67 @@
 
       <script>          
           var nj_01 = L.geoJson(nj_01, {
+            style: style,
             onEachFeature: onEachFeature
+            // style: function(feature) {
+            // switch (feature.properties.party) {
+            //   case 'Republican': return {color: "#ff0000"};
+            //   case 'Democrat':   return {color: "#0000ff"};
+          
           });
 
           var nj_02 = L.geoJson(nj_02, {
+            style: style,
             onEachFeature: onEachFeature
           });
 
           var nj_03 = L.geoJson(nj_03, {
+            style: style,
             onEachFeature: onEachFeature
           });
 
           var nj_04 = L.geoJson(nj_04, {
+            style: style,
             onEachFeature: onEachFeature
           });
 
           var nj_05 = L.geoJson(nj_05, {
+            style: style,
             onEachFeature: onEachFeature
           });
 
           var nj_06 = L.geoJson(nj_06, {
+            style: style,
             onEachFeature: onEachFeature
           });
 
           var nj_07 = L.geoJson(nj_07, {
+            style: style,
             onEachFeature: onEachFeature
           });
 
           var nj_08 = L.geoJson(nj_08, {
+            style: style,
             onEachFeature: onEachFeature
           });
 
           var nj_09 = L.geoJson(nj_09, {
+            style: style,
             onEachFeature: onEachFeature
           });
 
           var nj_10 = L.geoJson(nj_10, {
+            style: style,
             onEachFeature: onEachFeature
           });
 
           var nj_11 = L.geoJson(nj_11, {
+            style: style,
             onEachFeature: onEachFeature
           });
 
           var nj_12 = L.geoJson(nj_12, {
+            style: style,
             onEachFeature: onEachFeature
           });
 
@@ -392,6 +439,13 @@
                   layer.bindPopup(feature.properties.popupContent);
               }
           }
+
+          function style(feature) {
+          switch (feature.properties.party) {
+            case 'Republican': return {color: "#ff0000"};
+            case 'Democrat':   return {color: "#0000ff"};
+          }
+        }
 
           var map = L.map('map').setView([40.1, -74.4], 8);
 

@@ -4,7 +4,8 @@ var nj_01 =  {
 		{
 			"type": "Feature",
 			"properties": {
-	                "popupContent": "<a href='#nj01'>District 01</a>"
+	                "popupContent": "<a href='#nj01'>District 01</a>",
+	                "party": "Democrat"
 	        },
 			"geometry": {
 				"type": "MultiPolygon", 		
@@ -20,7 +21,8 @@ var nj_02 =  {
 		{
 			"type": "Feature",
 			"properties": {
-	                "popupContent": "<a href='#nj02'>District 02</a>"
+	                "popupContent": "<a href='#nj02'>District 02</a>",
+	                "party": "Republican"
 	        },
 			"geometry": {
 				"type": "MultiPolygon", 		
@@ -36,7 +38,8 @@ var nj_03 =  {
 		{
 			"type": "Feature",
 			"properties": {
-	                "popupContent": "<a href='#nj03'>District 03</a>"
+	                "popupContent": "<a href='#nj03'>District 03</a>",
+	                "party": "Republican"
 	        },
 			"geometry": {
 				"type": "MultiPolygon", 		
@@ -52,7 +55,8 @@ var nj_04 =  {
 		{
 			"type": "Feature",
 			"properties": {
-	                "popupContent": "<a href='#nj04'>District 04</a>"
+	                "popupContent": "<a href='#nj04'>District 04</a>",
+	                "party": "Republican"
 	        },
 			"geometry": {
 				"type": "MultiPolygon", 		
@@ -68,7 +72,8 @@ var nj_05 =  {
 		{
 			"type": "Feature",
 			"properties": {
-	                "popupContent": "<a href='#nj05'>District 05</a>"
+	                "popupContent": "<a href='#nj05'>District 05</a>",
+	                "party": "Republican"
 	        },
 			"geometry": {
 				"type": "MultiPolygon", 		
@@ -84,7 +89,8 @@ var nj_06 =  {
 		{
 			"type": "Feature",
 			"properties": {
-	                "popupContent": "<a href='#nj06'>District 06</a>"
+	                "popupContent": "<a href='#nj06'>District 06</a>",
+	                "party": "Democrat"
 	        },
 			"geometry": {
 				"type": "MultiPolygon", 		
@@ -100,7 +106,8 @@ var nj_07 =  {
 		{
 			"type": "Feature",
 			"properties": {
-	                "popupContent": "<a href='#nj07'>District 07</a>"
+	                "popupContent": "<a href='#nj07'>District 07</a>",
+	                "party": "Republican"
 	        },
 			"geometry": {
 				"type": "MultiPolygon",
@@ -116,7 +123,8 @@ var nj_08 =  {
 		{
 			"type": "Feature",
 			"properties": {
-	                "popupContent": "<a href='#nj08'>District 08</a>"
+	                "popupContent": "<a href='#nj08'>District 08</a>",
+	                "party": "Democrat"
 	        },
 			"geometry": {
 				"type": "MultiPolygon", 		
@@ -132,7 +140,8 @@ var nj_09 =  {
 		{
 			"type": "Feature",
 			"properties": {
-	                "popupContent": "<a href='#nj09'>District 09</a>"
+	                "popupContent": "<a href='#nj09'>District 09</a>",
+	                "party": "Democrat"
 	        },
 			"geometry": {
 				"type": "MultiPolygon", 		
@@ -148,7 +157,8 @@ var nj_10 =  {
 		{
 			"type": "Feature",
 			"properties": {
-	                "popupContent": "<a href='#nj10'>District 10</a>"
+	                "popupContent": "<a href='#nj10'>District 10</a>",
+	                "party": "Democrat"
 	        },
 			"geometry": {
 				"type": "MultiPolygon", 		
@@ -164,7 +174,8 @@ var nj_11 =  {
 		{
 			"type": "Feature",
 			"properties": {
-	                "popupContent": "<a href='#nj11'>District 11</a>"
+	                "popupContent": "<a href='#nj11'>District 11</a>",
+	                "party": "Republican"
 	        },
 			"geometry": {
 				"type": "MultiPolygon", 		
@@ -180,7 +191,8 @@ var nj_12 =  {
 		{
 			"type": "Feature",
 			"properties": {
-	                "popupContent": "<a href='#nj12'>District 12</a>"
+	                "popupContent": "<a href='#nj12'>District 12</a>",
+	                "party": "Democrat"
 	        },
 			"geometry": {
 				"type": "MultiPolygon", 		
